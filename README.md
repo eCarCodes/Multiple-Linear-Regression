@@ -5,24 +5,46 @@ The purpose of the project is to explore linear regression behind the scenes by 
 Kaggle dataset credits to Nikhil Narayan (nikhil7280)
 
 ## Tech Stack & Libraries
-- Python
-- numpy
-- matplotlib
+- Python 3.10+
+- NumPy
+- Matplotlib
+- Jupyter Notebook
 
 ## Installation
-1. Clone this repository
+
+### Prerequisites
+- [Python 3.10+](https://www.python.org/downloads/)
+- [Git](https://git-scm.com/downloads)
+
+### 1. Clone the repository
+```bash
 git clone https://github.com/eCarCodes/Multiple-Linear-Regression.git
 cd Multiple-Linear-Regression
+```
 
-2. Install the required dependencies
-python -m python -m pip install -r requirements.txt
-Note: On macOS/Linux, you may need to use python3 instead of python.
+### 2. (Recommended) Create a virtual environment
+```bash
+python -m venv venv
+```
+Activate it:
+- **Windows:** `venv\Scripts\activate`
+- **macOS/Linux:** `source venv/bin/activate`
 
-3. Launch Jupyter Notebook
+### 3. Install the dependencies
+```bash
+python -m pip install -r requirements.txt
+```
+> **Note:** On macOS/Linux, you may need to use `python3` instead of `python`.
+
+### 4. Launch Jupyter Notebook
+```bash
 jupyter notebook
-Then open linearRegressionModel.ipynb in your browser.
+```
+Then open `Multivariate_LR.ipynb` in your browser and run all cells (**Run → Run All Cells**).
+
+The dataset is included in `data/Student_Performance.csv`, so you don't need to download anything from Kaggle.
 
 ## Demo
+Model trained on 1500 iterations of gradient descent:
 
-Model trained on 1500 iterations of gradient descent: 
-![alt text](image.png)
+![Predicted vs. actual performance index after 1500 iterations of gradient descent](image.png)
